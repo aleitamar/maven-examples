@@ -14,4 +14,4 @@ for fn in `cat target/integration_test_list.txt`; do
 	python testimpact_subset_csv.py > $metapath 
 done
 
-ack --noheading "." src/integration-test/meta/ | sed 's#src/integration-test/meta/##g' | sed 's/\.java/ /' | sed 's/:[[:digit:]]://' | awk ' { t = $1; $1 = $2; $2 = t; print; } ' | sort > src/integration-test/impact-map.txt
+ack --noheading "." src/integration-test/meta/ | sed 's#src/integration-test/meta/##g' | sed 's/\.java/ /' | sed 's#/#.#g' | sed 's/:[[:digit:]]://' | awk ' { t = $1; $1 = $2; $2 = t; print; } ' | sort > src/integration-test/impact-map.txt

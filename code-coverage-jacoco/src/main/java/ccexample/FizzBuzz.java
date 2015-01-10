@@ -1,3 +1,5 @@
+package ccexample;
+
 /**
  * @author Petri Kainulainen
  */

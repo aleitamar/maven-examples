@@ -1,21 +1,22 @@
+package ccexample;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertNull;
-import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
  * @author Petri Kainulainen
  */
-public class ITFizzBuzzTest {
+public class ITFizzBuzzTest2 {
 
-    private FizzBuzz fizzBuzz;
+    private FizzBuzz2 fizzBuzz;
 
     @Before
     public void setUp() {
-        fizzBuzz = new FizzBuzz();
+        fizzBuzz = new FizzBuzz2();
     }
 
     @Test
